@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 15% 60% 25%;
+  grid-template-areas: "header header" "main aside" "footer footer";
+}
+
+header {
+  grid-area: header;
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  grid-area: main;
+  background: #fff8e3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .main__first {
+  height: 38%;
+  padding-top: 50px;
+}
+main .main__second {
+  height: 62%;
+  width: 100%;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 47% 47%;
+  grid-template-rows: 45% 45%;
+  -moz-column-gap: 6%;
+       column-gap: 6%;
+  row-gap: 10%;
+  grid-template-areas: "more1 more2" "more3 more3";
+}
+main .main__second .main__more-1 {
+  grid-area: more1;
+}
+main .main__second .main__more-2 {
+  grid-area: more2;
+}
+main .main__second .main__more-3 {
+  grid-area: more3;
+}
+main .main__second .more {
+  background: #feeab9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  grid-area: aside;
+  background: #ddeccb;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  grid-area: footer;
+  background: #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .section {
+  background: #fafafa;
+  width: 22%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
